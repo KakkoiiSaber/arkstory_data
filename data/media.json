@@ -946,18 +946,18 @@
         "audio/sound_beta_2/music/act5d0/m_sys_penguinlogistics_loop.mp3"
       ]
     ],
-    "audio/sound_beta_2/music/act11d0d0/m_sys_friend.ab": [
-      "3f37eada8aaab6248bcbdc8fface0161",
-      [
-        "audio/sound_beta_2/music/act11d0d0/m_sys_friend_intro.mp3",
-        "audio/sound_beta_2/music/act11d0d0/m_sys_friend_loop.mp3"
-      ]
-    ],
     "audio/sound_beta_2/music/act9d0d0/m_sys_w.ab": [
       "71e616c79fa3117c6295fbf6a0da58f2",
       [
         "audio/sound_beta_2/music/act9d0d0/m_sys_w_intro.mp3",
         "audio/sound_beta_2/music/act9d0d0/m_sys_w_loop.mp3"
+      ]
+    ],
+    "audio/sound_beta_2/music/act11d0d0/m_sys_friend.ab": [
+      "3f37eada8aaab6248bcbdc8fface0161",
+      [
+        "audio/sound_beta_2/music/act11d0d0/m_sys_friend_intro.mp3",
+        "audio/sound_beta_2/music/act11d0d0/m_sys_friend_loop.mp3"
       ]
     ],
     "audio/sound_beta_2/music/act12d0d0/m_sys_dontmaketrouble.ab": [
@@ -985,6 +985,13 @@
       "d51a76cde461ea8f1e9f01219513d180",
       [
         "audio/sound_beta_2/music/act16d5d0/m_sys_act16_loop.mp3"
+      ]
+    ],
+    "audio/sound_beta_2/music/act17d0d0/m_sys_act17.ab": [
+      "56dcd09160ab56ff6099e40e53ca9f10",
+      [
+        "https://raw.githubusercontent.com/akgcc/arkdata/main/assets/torappu/dynamicassets/audio/sound_beta_2/music/act17d0d0/m_sys_act17_intro.mp3",
+        "https://raw.githubusercontent.com/akgcc/arkdata/main/assets/torappu/dynamicassets/audio/sound_beta_2/music/act17d0d0/m_sys_act17_loop.mp3"
       ]
     ],
     "audio/sound_beta_2/music/act18d0d0/m_sys_act18d0d0.ab": [
@@ -1047,18 +1054,18 @@
         "audio/sound_beta_2/music/act18side/m_sys_leithanien_loop.mp3"
       ]
     ],
-    "audio/sound_beta_2/music/act20side/m_sys_act20side.ab": [
-      "1f92315c9cc73cf15390dbcc4b615b8c",
-      [
-        "audio/sound_beta_2/music/act20side/m_sys_act20side_intro.mp3",
-        "audio/sound_beta_2/music/act20side/m_sys_act20side_loop.mp3"
-      ]
-    ],
     "audio/sound_beta_2/music/act19side/m_sys_act19side.ab": [
       "ed77573ce5e75cca21d70748c2c97f42",
       [
         "audio/sound_beta_2/music/act19side/m_sys_act19side_intro.mp3",
         "audio/sound_beta_2/music/act19side/m_sys_act19side_loop.mp3"
+      ]
+    ],
+    "audio/sound_beta_2/music/act20side/m_sys_act20side.ab": [
+      "1f92315c9cc73cf15390dbcc4b615b8c",
+      [
+        "audio/sound_beta_2/music/act20side/m_sys_act20side_intro.mp3",
+        "audio/sound_beta_2/music/act20side/m_sys_act20side_loop.mp3"
       ]
     ],
     "audio/sound_beta_2/music/act21side/m_sys_act21side.ab": [
@@ -1128,6 +1135,12 @@
         "audio/sound_beta_2/music/act31side/m_act31side_sys_loop.mp3"
       ]
     ],
+    "audio/sound_beta_2/music/act32side/m_act32side_sys.ab": [
+      "2267adf4ed673fdffb58301fbba7a119",
+      [
+        "https://torappu.prts.wiki/assets/audio/music/act32side/m_act32side_sys_loop.mp3"
+      ]
+    ],
     "audio/sound_beta_2/music/act33side/m_act33side_sys.ab": [
       "8e18c0c960c4d6e1863c14463188b50d",
       [
@@ -1191,6 +1204,81 @@
       "62a3b51359308bbe3145dd9c7ca22504",
       [
         "audio/sound_beta_2/music/act43side/m_sys_act43side_loop.mp3"
+      ]
+    ],
+    "audio/sound_beta_2/music/act44side/m_sys_act44side_theme1.ab": [
+      "3a59c08c52ab7d33b316f5012ad643ce",
+      [
+        "audio/sound_beta_2/music/act44side/m_sys_act44side_theme1_intro.mp3",
+        "audio/sound_beta_2/music/act44side/m_sys_act44side_theme1_loop.mp3"
+      ]
+    ],
+    "audio/sound_beta_2/music/avemujica/m_sys3_avemujica.ab": [
+      "3e9e2775e23fd56309da6992c04c6397",
+      [
+        "https://raw.githubusercontent.com/akgcc/arkdata/main/assets/torappu/dynamicassets/audio/sound_beta_2/music/avemujica/m_sys3_avemujica_loop.mp3"
+      ]
+    ],
+    "audio/sound_beta_2/music/act46side/m_sys_act46side.ab": [
+      "75ddcd2fb284ca1c462c668cee5e96b5",
+      [
+        "audio/sound_beta_2/music/act46side/m_sys_act46side_loop.mp3"
+      ]
+    ],
+    "audio/sound_beta_2/music/act47side/m_sys_act47side.ab": [
+      "85b1feff01ae404419d10a1b61dac747",
+      [
+        "audio/sound_beta_2/music/act47side/m_sys_act47side_loop.mp3"
+      ]
+    ],
+    "audio/sound_beta_2/music/act48side/m_sys_act48side.ab": [
+      "1bb7e38a007382c6d4ef6b030723604e",
+      [
+        "https://torappu.prts.wiki/assets/audio/music/act48side/m_sys_act48side_loop.mp3"
+      ]
+    ],
+    "audio/sound_beta_2/music/act49side/m_sys_act49side.ab": [
+      "0c4ab4ae639efc0ec10849077c0255cb",
+      [
+        "audio/sound_beta_2/music/act49side/m_sys_act49side_loop.mp3"
+      ]
+    ],
+    "audio/sound_beta_2/music/act50side/m_sys_monsterhunter2.ab": [
+      "a1e9ceff6626da03715d070de046f8d4",
+      [
+        "https://raw.githubusercontent.com/akgcc/arkdata/main/assets/torappu/dynamicassets/audio/sound_beta_2/music/act50side/m_sys_monsterhunter2_intro.mp3",
+        "https://raw.githubusercontent.com/akgcc/arkdata/main/assets/torappu/dynamicassets/audio/sound_beta_2/music/act50side/m_sys_monsterhunter2_loop.mp3"
+      ]
+    ],
+    "audio/sound_beta_2/music/act51side/m_sys_act51side.ab": [
+      "d3a115437125c9bc1138a858f94b1f1f",
+      [
+        "https://torappu.prts.wiki/assets/audio/music/act51side/m_sys_act51side_loop.mp3"
+      ]
+    ],
+    "audio/sound_beta_2/music/act53side/m_sys1_act53side.ab": [
+      "9b9328acd531632c2f610091139ae378",
+      [
+        "https://torappu.prts.wiki/assets/audio/music/act53side/m_sys1_act53side_loop.mp3"
+      ]
+    ],
+    "audio/sound_beta_2/music/act54side/m_sys_act54side_mainpage.ab": [
+      "10c08dfeb6b132c4372ad3e6d14b0e48",
+      [
+        "https://raw.githubusercontent.com/akgcc/arkdata/main/assets/torappu/dynamicassets/audio/sound_beta_2/music/act54side/m_sys_act54side_mainpage_loop.mp3"
+      ]
+    ],
+    "audio/sound_beta_2/music/act52side/m_sys_act52side.ab": [
+      "48319b4f8fd0faf8a404f08d64cd6782",
+      [
+        "audio/sound_beta_2/music/act52side/m_sys_act52side_intro.mp3",
+        "audio/sound_beta_2/music/act52side/m_sys_act52side_loop.mp3"
+      ]
+    ],
+    "audio/sound_beta_2/music/act55side/m_sys1_act55side.ab": [
+      "0ba0b1500b91b50fd5d2cf8064e6101b",
+      [
+        "https://torappu.prts.wiki/assets/audio/music/act55side/m_sys1_act55side_loop.mp3"
       ]
     ],
     "audio/sound_beta_2/music/beta2_180603/m_sys_tech.ab": [
@@ -1289,94 +1377,6 @@
       "ad7bc9e1b37a75ec01180db1ef39215f",
       [
         "audio/sound_beta_2/music/act18mini/m_sys_act18mini_loop.mp3"
-      ]
-    ],
-    "audio/sound_beta_2/music/act17d0d0/m_sys_act17.ab": [
-      "56dcd09160ab56ff6099e40e53ca9f10",
-      [
-        "https://raw.githubusercontent.com/akgcc/arkdata/main/assets/torappu/dynamicassets/audio/sound_beta_2/music/act17d0d0/m_sys_act17_intro.mp3",
-        "https://raw.githubusercontent.com/akgcc/arkdata/main/assets/torappu/dynamicassets/audio/sound_beta_2/music/act17d0d0/m_sys_act17_loop.mp3"
-      ]
-    ],
-    "audio/sound_beta_2/music/act32side/m_act32side_sys.ab": [
-      "2267adf4ed673fdffb58301fbba7a119",
-      [
-        "https://torappu.prts.wiki/assets/audio/music/act32side/m_act32side_sys_loop.mp3"
-      ]
-    ],
-    "audio/sound_beta_2/music/act44side/m_sys_act44side_theme1.ab": [
-      "3a59c08c52ab7d33b316f5012ad643ce",
-      [
-        "audio/sound_beta_2/music/act44side/m_sys_act44side_theme1_intro.mp3",
-        "audio/sound_beta_2/music/act44side/m_sys_act44side_theme1_loop.mp3"
-      ]
-    ],
-    "audio/sound_beta_2/music/avemujica/m_sys3_avemujica.ab": [
-      "3e9e2775e23fd56309da6992c04c6397",
-      [
-        "https://raw.githubusercontent.com/akgcc/arkdata/main/assets/torappu/dynamicassets/audio/sound_beta_2/music/avemujica/m_sys3_avemujica_loop.mp3"
-      ]
-    ],
-    "audio/sound_beta_2/music/act46side/m_sys_act46side.ab": [
-      "75ddcd2fb284ca1c462c668cee5e96b5",
-      [
-        "audio/sound_beta_2/music/act46side/m_sys_act46side_loop.mp3"
-      ]
-    ],
-    "audio/sound_beta_2/music/act47side/m_sys_act47side.ab": [
-      "85b1feff01ae404419d10a1b61dac747",
-      [
-        "audio/sound_beta_2/music/act47side/m_sys_act47side_loop.mp3"
-      ]
-    ],
-    "audio/sound_beta_2/music/act48side/m_sys_act48side.ab": [
-      "1bb7e38a007382c6d4ef6b030723604e",
-      [
-        "https://torappu.prts.wiki/assets/audio/music/act48side/m_sys_act48side_loop.mp3"
-      ]
-    ],
-    "audio/sound_beta_2/music/act49side/m_sys_act49side.ab": [
-      "0c4ab4ae639efc0ec10849077c0255cb",
-      [
-        "audio/sound_beta_2/music/act49side/m_sys_act49side_loop.mp3"
-      ]
-    ],
-    "audio/sound_beta_2/music/act50side/m_sys_monsterhunter2.ab": [
-      "a1e9ceff6626da03715d070de046f8d4",
-      [
-        "https://raw.githubusercontent.com/akgcc/arkdata/main/assets/torappu/dynamicassets/audio/sound_beta_2/music/act50side/m_sys_monsterhunter2_intro.mp3",
-        "https://raw.githubusercontent.com/akgcc/arkdata/main/assets/torappu/dynamicassets/audio/sound_beta_2/music/act50side/m_sys_monsterhunter2_loop.mp3"
-      ]
-    ],
-    "audio/sound_beta_2/music/act51side/m_sys_act51side.ab": [
-      "d3a115437125c9bc1138a858f94b1f1f",
-      [
-        "https://torappu.prts.wiki/assets/audio/music/act51side/m_sys_act51side_loop.mp3"
-      ]
-    ],
-    "audio/sound_beta_2/music/act53side/m_sys1_act53side.ab": [
-      "9b9328acd531632c2f610091139ae378",
-      [
-        "https://torappu.prts.wiki/assets/audio/music/act53side/m_sys1_act53side_loop.mp3"
-      ]
-    ],
-    "audio/sound_beta_2/music/act54side/m_sys_act54side_mainpage.ab": [
-      "10c08dfeb6b132c4372ad3e6d14b0e48",
-      [
-        "https://raw.githubusercontent.com/akgcc/arkdata/main/assets/torappu/dynamicassets/audio/sound_beta_2/music/act54side/m_sys_act54side_mainpage_loop.mp3"
-      ]
-    ],
-    "audio/sound_beta_2/music/act52side/m_sys_act52side.ab": [
-      "48319b4f8fd0faf8a404f08d64cd6782",
-      [
-        "audio/sound_beta_2/music/act52side/m_sys_act52side_intro.mp3",
-        "audio/sound_beta_2/music/act52side/m_sys_act52side_loop.mp3"
-      ]
-    ],
-    "audio/sound_beta_2/music/act55side/m_sys1_act55side.ab": [
-      "0ba0b1500b91b50fd5d2cf8064e6101b",
-      [
-        "https://torappu.prts.wiki/assets/audio/music/act55side/m_sys1_act55side_loop.mp3"
       ]
     ],
     "audio/sound_beta_2/music/act19mini/m_sys_act19mini.ab": [
