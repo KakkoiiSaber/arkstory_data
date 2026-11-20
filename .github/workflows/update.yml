@@ -2,7 +2,6 @@ name: Update ArkStory data
 on:
   push:
     branches: [main]
-    paths: ['scripts/**', 'config/**', '.github/workflows/update.yml', 'requirements.txt']
   workflow_dispatch:
   schedule:
     - cron: '25 8 * * *'
