@@ -142,7 +142,7 @@ def main():
                 groups[name][Path(stem).name].append(key)
                 continue
         if song_id:
-            external[key] = fetch(f"https://monster-siren.hypergryph.com/api/song/{song_id}").json()["data"]["sourceUrl"]
+            external[key] = f"siren:{song_id}"
         elif key.startswith("https://") and "/arkdata/" not in key:
             external[key] = key
         else:
@@ -167,7 +167,20 @@ def main():
             print("Extracting", name, flush=True)
             extract(base, rows[name], names, state)
     for key, url in external.items():
-        publish(key, fetch(url).content, "external", state)
+        if state.get(key, {}).get("source") == url:
+            continue
+        target = url
+        if url.startswith("siren:"):
+            target = fetch("https://monster-siren.hypergryph.com/api/song/" + url.split(":")[1]).json()["data"]["sourceUrl"]
+        publish(key, fetch(target).content, url, state)
+    archives = json.loads(Path("config/archived-media.json").read_bytes())
+    for key in wanted - state.keys():
+        if key in archives:
+            record = archives[key]
+            data = Path(record["path"]).read_bytes()
+            if hashlib.sha256(data).hexdigest() != record["sha256"]:
+                raise ValueError(f"Archived media checksum mismatch: {key}")
+            publish(key, data, "archive", state)
     if missing := wanted - state.keys():
         raise ValueError(f"Missing media: {sorted(missing)}")
     save(manifest, dict(version=version, extractor=extractor, bundles=fingerprints, resources=dict(sorted(state.items()))))
