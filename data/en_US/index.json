@@ -1,0 +1,638 @@
+{
+  "version": 1,
+  "homeMusic": {
+    "intro": "audio/sound_beta_2/music/beta1_180603/m_sys_void_intro.mp3",
+    "loop": "audio/sound_beta_2/music/beta1_180603/m_sys_void_loop.mp3",
+    "volume": 1.0,
+    "crossfade": 1.0,
+    "delay": 0.0,
+    "fadeStyleId": null,
+    "name": "sys.ON_MUSIC.bg_void"
+  },
+  "stories": [
+    {
+      "id": "1stact",
+      "name": "Grani and the Knights' Treasure",
+      "type": "ACTIVITY_STORY",
+      "startTime": "2020-02",
+      "kvImageId": "kv_grani_and_the_knights_treasure.png",
+      "detail": "stories/1stact.json"
+    },
+    {
+      "id": "act3d0",
+      "name": "Heart of Surging Flame",
+      "type": "ACTIVITY_STORY",
+      "startTime": "2020-04",
+      "kvImageId": "kv_heart_of_surging_flame.png",
+      "detail": "stories/act3d0.json"
+    },
+    {
+      "id": "act5d0",
+      "name": "Code of Brawl",
+      "type": "ACTIVITY_STORY",
+      "startTime": "2020-05",
+      "kvImageId": "kv_code_of_brawl.png",
+      "detail": "stories/act5d0.json"
+    },
+    {
+      "id": "act11d0",
+      "name": "Twilight of Wolumonde",
+      "type": "ACTIVITY_STORY",
+      "startTime": "2020-10",
+      "kvImageId": "kv_twilight_of_wolumonde.png",
+      "detail": "stories/act11d0.json"
+    },
+    {
+      "id": "act9d0",
+      "name": "Darknights Memoir",
+      "type": "ACTIVITY_STORY",
+      "startTime": "2020-12",
+      "kvImageId": "kv_darknights_memoir.png",
+      "detail": "stories/act9d0.json"
+    },
+    {
+      "id": "act12d0",
+      "name": "The Great Chief Returns",
+      "type": "ACTIVITY_STORY",
+      "startTime": "2021-02",
+      "kvImageId": "kv_the_great_chief_returns.png",
+      "detail": "stories/act12d0.json"
+    },
+    {
+      "id": "act13d5",
+      "name": "Maria Nearl",
+      "type": "ACTIVITY_STORY",
+      "startTime": "2021-04",
+      "kvImageId": "kv_maria_nearl.png",
+      "detail": "stories/act13d5.json"
+    },
+    {
+      "id": "act15d0",
+      "name": "Mansfield Break",
+      "type": "ACTIVITY_STORY",
+      "startTime": "2021-06",
+      "kvImageId": "kv_mansfield_break.png",
+      "detail": "stories/act15d0.json"
+    },
+    {
+      "id": "act16d5",
+      "name": "Who Is Real",
+      "type": "ACTIVITY_STORY",
+      "startTime": "2021-07",
+      "kvImageId": "kv_who_is_real.png",
+      "detail": "stories/act16d5.json"
+    },
+    {
+      "id": "act17d0",
+      "name": "Operation Originium Dust",
+      "type": "ACTIVITY_STORY",
+      "startTime": "2021-08",
+      "kvImageId": null,
+      "detail": "stories/act17d0.json"
+    },
+    {
+      "id": "act18d0",
+      "name": "A Walk in the Dust",
+      "type": "ACTIVITY_STORY",
+      "startTime": "2021-09",
+      "kvImageId": "kv_a_walk_in_the_dusk.png",
+      "detail": "stories/act18d0.json"
+    },
+    {
+      "id": "act18d3",
+      "name": "Under Tides",
+      "type": "ACTIVITY_STORY",
+      "startTime": "2021-10",
+      "kvImageId": "kv_under_tides.png",
+      "detail": "stories/act18d3.json"
+    },
+    {
+      "id": "act12side",
+      "name": "Dossoles Holiday",
+      "type": "ACTIVITY_STORY",
+      "startTime": "2022-01",
+      "kvImageId": "kv_dossoles_holiday.png",
+      "detail": "stories/act12side.json"
+    },
+    {
+      "id": "act13side",
+      "name": "Near Light",
+      "type": "ACTIVITY_STORY",
+      "startTime": "2022-04",
+      "kvImageId": "kv_near_light.png",
+      "detail": "stories/act13side.json"
+    },
+    {
+      "id": "act14side",
+      "name": "Break the Ice",
+      "type": "ACTIVITY_STORY",
+      "startTime": "2022-06",
+      "kvImageId": "kv_break_the_ice.png",
+      "detail": "stories/act14side.json"
+    },
+    {
+      "id": "act15side",
+      "name": "Invitation to Wine",
+      "type": "ACTIVITY_STORY",
+      "startTime": "2022-07",
+      "kvImageId": "kv_invitation_to_wine.png",
+      "detail": "stories/act15side.json"
+    },
+    {
+      "id": "act16side",
+      "name": "Guide Ahead",
+      "type": "ACTIVITY_STORY",
+      "startTime": "2022-09",
+      "kvImageId": "kv_guiding_ahead.png",
+      "detail": "stories/act16side.json"
+    },
+    {
+      "id": "act17side",
+      "name": "Stultifera Navis",
+      "type": "ACTIVITY_STORY",
+      "startTime": "2022-11",
+      "kvImageId": "kv_stultifera_navis.png",
+      "detail": "stories/act17side.json"
+    },
+    {
+      "id": "act18side",
+      "name": "Lingering Echoes",
+      "type": "ACTIVITY_STORY",
+      "startTime": "2022-12",
+      "kvImageId": "kv_lingering_echoes.png",
+      "detail": "stories/act18side.json"
+    },
+    {
+      "id": "act20side",
+      "name": "Ideal City: Endless Carnival",
+      "type": "ACTIVITY_STORY",
+      "startTime": "2023-01",
+      "kvImageId": "kv_ideal_city_carnival_in_the_endless_summer.png",
+      "detail": "stories/act20side.json"
+    },
+    {
+      "id": "act19side",
+      "name": "Dorothy's Vision",
+      "type": "ACTIVITY_STORY",
+      "startTime": "2023-03",
+      "kvImageId": "kv_dorothys_vision.png",
+      "detail": "stories/act19side.json"
+    },
+    {
+      "id": "act21side",
+      "name": "IL Siracusano",
+      "type": "ACTIVITY_STORY",
+      "startTime": "2023-05",
+      "kvImageId": "kv_il_siracusano.png",
+      "detail": "stories/act21side.json"
+    },
+    {
+      "id": "act22side",
+      "name": "What the Firelight Casts",
+      "type": "ACTIVITY_STORY",
+      "startTime": "2023-07",
+      "kvImageId": "kv_what_the_firelight_casts.png",
+      "detail": "stories/act22side.json"
+    },
+    {
+      "id": "act23side",
+      "name": "Where Vernal Winds Will Never Blow",
+      "type": "ACTIVITY_STORY",
+      "startTime": "2023-07",
+      "kvImageId": "kv_where_vernal_winds_will_never_blow.png",
+      "detail": "stories/act23side.json"
+    },
+    {
+      "id": "act24side",
+      "name": "A Flurry to the Flame",
+      "type": "ACTIVITY_STORY",
+      "startTime": "2023-09",
+      "kvImageId": null,
+      "detail": "stories/act24side.json"
+    },
+    {
+      "id": "act25side",
+      "name": "Lone Trail",
+      "type": "ACTIVITY_STORY",
+      "startTime": "2023-11",
+      "kvImageId": "kv_lone_trail.png",
+      "detail": "stories/act25side.json"
+    },
+    {
+      "id": "act26side",
+      "name": "Hortus de Escapismo",
+      "type": "ACTIVITY_STORY",
+      "startTime": "2023-12",
+      "kvImageId": "kv_hortus_de_escapismo.png",
+      "detail": "stories/act26side.json"
+    },
+    {
+      "id": "act27side",
+      "name": "So Long, Adele: Home Away From Home",
+      "type": "ACTIVITY_STORY",
+      "startTime": "2024-01",
+      "kvImageId": "kv_so_long_adele.png",
+      "detail": "stories/act27side.json"
+    },
+    {
+      "id": "act28side",
+      "name": "Come Catastrophes or Wakes of Vultures",
+      "type": "ACTIVITY_STORY",
+      "startTime": "2024-03",
+      "kvImageId": "kv_come_catastrophes_or_wakes_of_vultures.png",
+      "detail": "stories/act28side.json"
+    },
+    {
+      "id": "act29side",
+      "name": "Zwillingstürme im Herbst",
+      "type": "ACTIVITY_STORY",
+      "startTime": "2024-05",
+      "kvImageId": "kv_zwillingsturme_im_herbst.png",
+      "detail": "stories/act29side.json"
+    },
+    {
+      "id": "act30side",
+      "name": "The Rides to Lake Silberneherze",
+      "type": "ACTIVITY_STORY",
+      "startTime": "2024-06",
+      "kvImageId": "kv_the_rides_to_lake_silberneherze.png",
+      "detail": "stories/act30side.json"
+    },
+    {
+      "id": "act31side",
+      "name": "Here A People Sows",
+      "type": "ACTIVITY_STORY",
+      "startTime": "2024-07",
+      "kvImageId": "kv_here_a_people_sows.png",
+      "detail": "stories/act31side.json"
+    },
+    {
+      "id": "act32side",
+      "name": "Operation Lucent Arrowhead",
+      "type": "ACTIVITY_STORY",
+      "startTime": "2024-09",
+      "kvImageId": null,
+      "detail": "stories/act32side.json"
+    },
+    {
+      "id": "act33side",
+      "name": "Babel",
+      "type": "ACTIVITY_STORY",
+      "startTime": "2024-10",
+      "kvImageId": "kv_babel.png",
+      "detail": "stories/act33side.json"
+    },
+    {
+      "id": "act34side",
+      "name": "Path of Life",
+      "type": "ACTIVITY_STORY",
+      "startTime": "2024-12",
+      "kvImageId": "kv_path_of_life.png",
+      "detail": "stories/act34side.json"
+    },
+    {
+      "id": "act35side",
+      "name": "Adventure That Cannot Wait for the Sun",
+      "type": "ACTIVITY_STORY",
+      "startTime": "2025-01",
+      "kvImageId": "kv_adventure_that_cannot_waits_for_the_sun.png",
+      "detail": "stories/act35side.json"
+    },
+    {
+      "id": "act36side",
+      "name": "Delicious On Terra",
+      "type": "ACTIVITY_STORY",
+      "startTime": "2025-03",
+      "kvImageId": null,
+      "detail": "stories/act36side.json"
+    },
+    {
+      "id": "act37side",
+      "name": "Ending a Grand Overture",
+      "type": "ACTIVITY_STORY",
+      "startTime": "2025-04",
+      "kvImageId": "kv_ending_a_grand_overture.png",
+      "detail": "stories/act37side.json"
+    },
+    {
+      "id": "act38side",
+      "name": "I Portatori dei Velluti",
+      "type": "ACTIVITY_STORY",
+      "startTime": "2025-04",
+      "kvImageId": "kv_i_portatori_dei_velluti.png",
+      "detail": "stories/act38side.json"
+    },
+    {
+      "id": "act39side",
+      "name": "Exodus from the Pale Sea",
+      "type": "ACTIVITY_STORY",
+      "startTime": "2025-06",
+      "kvImageId": "kv_exodus_from_the_pale_sea.png",
+      "detail": "stories/act39side.json"
+    },
+    {
+      "id": "act40side",
+      "name": "Such is the Joy of Our Reunion",
+      "type": "ACTIVITY_STORY",
+      "startTime": "2025-07",
+      "kvImageId": "kv_such_is_the_joy_of_our_reunion.png",
+      "detail": "stories/act40side.json"
+    },
+    {
+      "id": "act41side",
+      "name": "When Elegies Are Ashes",
+      "type": "ACTIVITY_STORY",
+      "startTime": "2025-08",
+      "kvImageId": "kv_when_elegies_are_ashes.png",
+      "detail": "stories/act41side.json"
+    },
+    {
+      "id": "act42side",
+      "name": "The Masses' Travels",
+      "type": "ACTIVITY_STORY",
+      "startTime": "2025-10",
+      "kvImageId": "kv_the_masses_travels.png",
+      "detail": "stories/act42side.json"
+    },
+    {
+      "id": "act43side",
+      "name": "Act or Die",
+      "type": "ACTIVITY_STORY",
+      "startTime": "2025-11",
+      "kvImageId": "kv_act_or_die.png",
+      "detail": "stories/act43side.json"
+    },
+    {
+      "id": "act4d0",
+      "name": "Operational Intelligence",
+      "type": "MINI_STORY",
+      "startTime": "2020-03",
+      "kvImageId": "kv_operational_intelligence.png",
+      "detail": "stories/act4d0.json"
+    },
+    {
+      "id": "act6d5",
+      "name": "Ancient Forge",
+      "type": "MINI_STORY",
+      "startTime": "2020-07",
+      "kvImageId": "kv_ancient_forge.png",
+      "detail": "stories/act6d5.json"
+    },
+    {
+      "id": "act7d5",
+      "name": "Stories of Afternoon",
+      "type": "MINI_STORY",
+      "startTime": "2020-08",
+      "kvImageId": "kv_stories_of_afternoon.png",
+      "detail": "stories/act7d5.json"
+    },
+    {
+      "id": "act10d5",
+      "name": "Children of Ursus",
+      "type": "MINI_STORY",
+      "startTime": "2020-09",
+      "kvImageId": "kv_children_of_ursus.png",
+      "detail": "stories/act10d5.json"
+    },
+    {
+      "id": "act13d0",
+      "name": "Rewinding Breeze",
+      "type": "MINI_STORY",
+      "startTime": "2021-03",
+      "kvImageId": "kv_rewinding_breeze.png",
+      "detail": "stories/act13d0.json"
+    },
+    {
+      "id": "act15d5",
+      "name": "Beyond Here",
+      "type": "MINI_STORY",
+      "startTime": "2021-07",
+      "kvImageId": "kv_beyond_here.png",
+      "detail": "stories/act15d5.json"
+    },
+    {
+      "id": "act7mini",
+      "name": "Preluding Lights",
+      "type": "MINI_STORY",
+      "startTime": "2021-12",
+      "kvImageId": "kv_preludinglights.png",
+      "detail": "stories/act7mini.json"
+    },
+    {
+      "id": "act8mini",
+      "name": "Vigilo",
+      "type": "MINI_STORY",
+      "startTime": "2022-02",
+      "kvImageId": "kv_vigilo.png",
+      "detail": "stories/act8mini.json"
+    },
+    {
+      "id": "act9mini",
+      "name": "Pinus Sylvestris",
+      "type": "MINI_STORY",
+      "startTime": "2022-04",
+      "kvImageId": "kv_pinus_sylvestris.png",
+      "detail": "stories/act9mini.json"
+    },
+    {
+      "id": "act10mini",
+      "name": "A Light Spark in Darkness",
+      "type": "MINI_STORY",
+      "startTime": "2022-08",
+      "kvImageId": "kv_a_light_spark_in_darkness.png",
+      "detail": "stories/act10mini.json"
+    },
+    {
+      "id": "act11mini",
+      "name": "To Be Continued",
+      "type": "MINI_STORY",
+      "startTime": "2023-02",
+      "kvImageId": "kv_to_be_continued.png",
+      "detail": "stories/act11mini.json"
+    },
+    {
+      "id": "act12mini",
+      "name": "An Obscure Wanderer",
+      "type": "MINI_STORY",
+      "startTime": "2023-04",
+      "kvImageId": "kv_an_obscure_wanderer.png",
+      "detail": "stories/act12mini.json"
+    },
+    {
+      "id": "act13mini",
+      "name": "It's Been A While",
+      "type": "MINI_STORY",
+      "startTime": "2023-04",
+      "kvImageId": null,
+      "detail": "stories/act13mini.json"
+    },
+    {
+      "id": "act14mini",
+      "name": "A Death in Chunfen",
+      "type": "MINI_STORY",
+      "startTime": "2023-08",
+      "kvImageId": "kv_a_death_in_chunfen.png",
+      "detail": "stories/act14mini.json"
+    },
+    {
+      "id": "act15mini",
+      "name": "The Black Forest Wills A Dream",
+      "type": "MINI_STORY",
+      "startTime": "2024-02",
+      "kvImageId": "kv_the_black_forest_wills_a_dream.png",
+      "detail": "stories/act15mini.json"
+    },
+    {
+      "id": "act16mini",
+      "name": "To the Grinning Valley",
+      "type": "MINI_STORY",
+      "startTime": "2024-07",
+      "kvImageId": "kv_to_the_grinning_valley.png",
+      "detail": "stories/act16mini.json"
+    },
+    {
+      "id": "act17mini",
+      "name": "A Kazdelian Rescue",
+      "type": "MINI_STORY",
+      "startTime": "2025-02",
+      "kvImageId": "kv_a_kazdelian_rescue.png",
+      "detail": "stories/act17mini.json"
+    },
+    {
+      "id": "act18mini",
+      "name": "See You Soon",
+      "type": "MINI_STORY",
+      "startTime": "2025-08",
+      "kvImageId": "kv_see_you_soon.png",
+      "detail": "stories/act18mini.json"
+    },
+    {
+      "id": "main_0",
+      "name": "Evil Time Part 1",
+      "type": "MAIN_STORY",
+      "startTime": "1970-01",
+      "kvImageId": "kv_evil_time_part1.png",
+      "detail": "stories/main_0.json"
+    },
+    {
+      "id": "main_1",
+      "name": "Evil Time Part 2",
+      "type": "MAIN_STORY",
+      "startTime": "1970-01",
+      "kvImageId": "kv_evil_time_part2.png",
+      "detail": "stories/main_1.json"
+    },
+    {
+      "id": "main_2",
+      "name": "Separated Hearts",
+      "type": "MAIN_STORY",
+      "startTime": "1970-01",
+      "kvImageId": "kv_seperated_hearts.png",
+      "detail": "stories/main_2.json"
+    },
+    {
+      "id": "main_3",
+      "name": "Stinging Shock",
+      "type": "MAIN_STORY",
+      "startTime": "1970-01",
+      "kvImageId": "kv_stinging_shock.png",
+      "detail": "stories/main_3.json"
+    },
+    {
+      "id": "main_4",
+      "name": "Burning Run",
+      "type": "MAIN_STORY",
+      "startTime": "1970-01",
+      "kvImageId": "kv_burning_run.png",
+      "detail": "stories/main_4.json"
+    },
+    {
+      "id": "main_5",
+      "name": "Necessary Solutions",
+      "type": "MAIN_STORY",
+      "startTime": "1970-01",
+      "kvImageId": "kv_necessary_solutions.png",
+      "detail": "stories/main_5.json"
+    },
+    {
+      "id": "main_6",
+      "name": "Partial Necrosis",
+      "type": "MAIN_STORY",
+      "startTime": "1970-01",
+      "kvImageId": "kv_partial_necrosis.png",
+      "detail": "stories/main_6.json"
+    },
+    {
+      "id": "main_7",
+      "name": "The Birth of Tragedy",
+      "type": "MAIN_STORY",
+      "startTime": "1970-01",
+      "kvImageId": "kv_the_birth_of_tragedy.png",
+      "detail": "stories/main_7.json"
+    },
+    {
+      "id": "main_8",
+      "name": "Roaring Flare",
+      "type": "MAIN_STORY",
+      "startTime": "1970-01",
+      "kvImageId": "kv_roaring_flare.png",
+      "detail": "stories/main_8.json"
+    },
+    {
+      "id": "main_9",
+      "name": "Stormwatch",
+      "type": "MAIN_STORY",
+      "startTime": "1970-01",
+      "kvImageId": "kv_stormwatch.png",
+      "detail": "stories/main_9.json"
+    },
+    {
+      "id": "main_10",
+      "name": "Shatterpoint",
+      "type": "MAIN_STORY",
+      "startTime": "1970-01",
+      "kvImageId": "kv_shatterpoint.png",
+      "detail": "stories/main_10.json"
+    },
+    {
+      "id": "main_11",
+      "name": "Return To Mist",
+      "type": "MAIN_STORY",
+      "startTime": "1970-01",
+      "kvImageId": "kv_return_to_mist.png",
+      "detail": "stories/main_11.json"
+    },
+    {
+      "id": "main_12",
+      "name": "All Quiet Under the Thunder",
+      "type": "MAIN_STORY",
+      "startTime": "1970-01",
+      "kvImageId": "kv_all_quiet_under_the_thunder.png",
+      "detail": "stories/main_12.json"
+    },
+    {
+      "id": "main_13",
+      "name": "The Whirlpool that is Passion",
+      "type": "MAIN_STORY",
+      "startTime": "1970-01",
+      "kvImageId": "kv_the_whirlpool_that_is_passion.png",
+      "detail": "stories/main_13.json"
+    },
+    {
+      "id": "main_14",
+      "name": "Absolved Will Be the Seekers",
+      "type": "MAIN_STORY",
+      "startTime": "1970-01",
+      "kvImageId": "kv_absolved_will_be_the_seekers.png",
+      "detail": "stories/main_14.json"
+    },
+    {
+      "id": "main_15",
+      "name": "Dissociative Recombination",
+      "type": "MAIN_STORY",
+      "startTime": "1970-01",
+      "kvImageId": "kv_dissociative_recombination.png",
+      "detail": "stories/main_15.json"
+    }
+  ]
+}

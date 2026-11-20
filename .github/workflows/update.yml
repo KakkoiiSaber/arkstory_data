@@ -1,0 +1,65 @@
+name: Update ArkStory data
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '25 8 * * *'
+permissions:
+  contents: write
+concurrency:
+  group: update-arkstory-data
+  cancel-in-progress: false
+defaults:
+  run:
+    shell: bash
+jobs:
+  update:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - uses: actions/checkout@v4
+        with:
+          repository: Kengxxiao/ArknightsGameData
+          path: .work/cn
+          persist-credentials: false
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /zh_CN/gamedata/excel/story_review_table.json
+            /zh_CN/gamedata/excel/stage_table.json
+            /zh_CN/gamedata/excel/audio_data.json
+            /zh_CN/gamedata/story/\[uc\]info/
+      - uses: actions/checkout@v4
+        with:
+          repository: Kengxxiao/ArknightsGameData_YoStar
+          path: .work/global
+          persist-credentials: false
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /*/gamedata/excel/story_review_table.json
+            /*/gamedata/excel/stage_table.json
+            /*/gamedata/excel/audio_data.json
+            /*/gamedata/story/\[uc\]info/
+      - uses: actions/checkout@v4
+        with:
+          repository: akgcc/kawapack
+          ref: 381e753d96f33b13b53b132890216ba0aa112c6f
+          path: .work/kawa
+          persist-credentials: false
+          sparse-checkout: kawapack/_src/lz4ak
+      - run: pip install -r requirements.txt
+      - run: |
+          python scripts/catalog.py .work/cn
+          for locale in en_US ja_JP ko_KR; do
+            python scripts/catalog.py .work/global --locale "$locale"
+          done
+          python scripts/media.py
+      - name: Publish verified changes
+        run: |
+          git add data media
+          if git diff --cached --quiet; then exit 0; fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Update ArkStory catalog and media'
+          git push
