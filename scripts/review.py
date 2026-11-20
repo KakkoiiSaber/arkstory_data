@@ -3,7 +3,6 @@ import re
 from pathlib import Path
 from datetime import datetime
 from zoneinfo import ZoneInfo
-from typing import Optional
 
 THEME_FIELDS = (
     "kvImageId", "titleImageId", "backgroundId", "coverContainsTitle", "titleIsBanner",
@@ -66,7 +65,7 @@ def simplify_story_review_table(table: dict) -> dict:
 def simplify_stage_table(table: dict) -> dict:
     if table["storySetType"] == "MAINLINE":
         id = table["mainlineData"]["zoneId"]
-        if id == None: 
+        if id is None: 
             # main story from main_14 as activity
             # for ep 15, relavant id is act2mainss => 15 = 13+ 2, split act and mainss
             relavantId = table["relevantActivityId"]
@@ -99,7 +98,7 @@ def simplify_stage_table(table: dict) -> dict:
     }
     return simplified_table
 
-def get_review_info(review_table: dict, stage_table: Optional[dict], story_desc_path: str) -> dict:
+def get_review_info(review_table: dict, stage_table: dict, story_desc_path: str) -> dict:
     infoUnlockDatas = review_table["infoUnlockDatas"]
     info_list = []
     for data in infoUnlockDatas:
@@ -120,23 +119,11 @@ def get_review_info(review_table: dict, stage_table: Optional[dict], story_desc_
         }
         info_list.append(info)
 
-    try: desc = stage_table["desc"]
-    except: desc = None
-    try: gameMusicId = stage_table["gameMusicId"]
-    except: gameMusicId = None
-    try: gameMusicName = stage_table["gameMusicName"]
-    except: gameMusicName = None
-    try: backgroundId = stage_table["backgroundId"]
-    except: backgroundId = None
-    
     review_info = {
         "id": review_table["id"],
         "name": review_table["name"],
-        "desc": desc,
-        "gameMusicId": gameMusicId,
-        "gameMusicName": gameMusicName,
-        "backgroundId": backgroundId,
-        "infoUnlockDatas": info_list
+        **{key: stage_table.get(key) for key in ("desc", "gameMusicId", "gameMusicName", "backgroundId")},
+        "infoUnlockDatas": info_list,
     }
     return copy_theme_fields(review_info, stage_table)
 

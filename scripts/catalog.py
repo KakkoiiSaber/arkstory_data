@@ -14,6 +14,9 @@ def save(path, value):
 
 def generate(source, locale, output):
     root = source / locale / "gamedata"
+    if not (root / "story" / "[uc]info").is_dir():
+        raise ValueError(f"Missing chapter summary directory under {root}")
+
     def table(name):
         return json.loads((root / "excel" / (name + ".json")).read_bytes())
 
@@ -42,6 +45,8 @@ def generate(source, locale, output):
         save(output / locale / path, detail)
         index.append({**{k: review[k] for k in ("id", "name", "type", "startTime")},
                       "kvImageId": detail["kvImageId"], "detail": path})
+    if not index:
+        raise ValueError(f"Empty catalog for {locale}")
     save(output / locale / "index.json", {"version": 1, "homeMusic": home, "stories": index})
     return index
 
