@@ -9,6 +9,7 @@ import zipfile
 from collections import defaultdict
 from pathlib import Path
 from urllib.parse import urlsplit
+from functools import cache
 
 import imageio_ffmpeg
 import requests
@@ -39,25 +40,50 @@ def fetch(url):
     return response
 
 
+@cache
 def wants():
     images, tracks = {}, {}
-    def music(bank):
+    paths = {}
+    owners = {}
+
+    def register(key, folder, role):
+        if key in paths:
+            return
+        suffix = Path(urlsplit(key).path).suffix.lower()
+        path = Path("media") / folder / (role + suffix)
+        if path.as_posix().casefold() in owners:
+            # A locale can use different art for the same activity and role.
+            path = path.with_stem(role + "-" + locale)
+        if path.as_posix().casefold() in owners:
+            raise ValueError(f"Conflicting media paths for {key}: {path}")
+        owners[path.as_posix().casefold()] = key
+        paths[key] = path
+
+    def music(bank, folder):
         if bank:
             for part in ("intro", "loop"):
                 if bank.get(part):
+                    register(bank[part], folder, "bgm-" + part)
                     tracks[bank[part]] = bank.get("loopSongId") if part == "loop" else None
-    for path in ROOT.glob("*/index.json"):
+    for path in sorted(ROOT.glob("*/index.json"), key=lambda p: (p.parent.name != "zh_CN", p.parent.name)):
+        locale = path.parent.name
         index = json.loads(path.read_bytes())
-        music(index["homeMusic"])
+        music(index["homeMusic"], "home")
         for card in index["stories"]:
             detail = json.loads((path.parent / card["detail"]).read_bytes())
+            name = re.sub(r'[<>:"/\\|?*\x00-\x1f]', "_", card["name"]).strip(" .")
+            folder = f"{card['id']}-{name}"
             for field, family in FAMILIES.items():
                 values = [detail.get(field)]
                 if field == "backgroundId" and detail.get("backgroundUrls"):
                     values = detail["backgroundUrls"]
+                role = {"kv": "cover", "title": "title", "retro_bkg": "background"}[family]
+                for number, key in enumerate(values, 1):
+                    if key:
+                        register(key, folder, role if len(values) == 1 else f"{role}-{number}")
                 images.update({v: family for v in values if v})
-            music(detail["audio"])
-    return images, tracks
+            music(detail["audio"], folder)
+    return images, tracks, paths
 
 
 def publish(key, data, origin, state):
@@ -69,7 +95,7 @@ def publish(key, data, origin, state):
         subprocess.run([imageio_ffmpeg.get_ffmpeg_exe(), "-v", "error", "-xerror", "-i",
                         "pipe:0", "-f", "null", "-"], input=data, check=True)
     digest = hashlib.sha256(data).hexdigest()
-    path = Path("media") / digest[:2] / (digest + suffix)
+    path = wants()[2][key]
     if not path.exists() or hashlib.sha256(path.read_bytes()).hexdigest() != digest:
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_bytes(data)
@@ -123,7 +149,7 @@ def main():
     version = fetch(VERSION).json()["resVersion"]
     base = CDN + version + "/"
     rows = {r["name"]: r for r in fetch(base + "hot_update_list.json").json()["abInfos"]}
-    images, tracks = wants()
+    images, tracks, paths = wants()
     groups = defaultdict(lambda: defaultdict(list))
     external = {}
     for key, family in images.items():
@@ -151,7 +177,7 @@ def main():
     wanted = set(images) | set(tracks)
     state = {}
     for key, r in previous.get("resources", {}).items():
-        if key in wanted and Path(r["path"]).is_file() and hashlib.sha256(Path(r["path"]).read_bytes()).hexdigest() == r["sha256"]:
+        if key in wanted and Path(r["path"]) == paths[key] and paths[key].is_file() and hashlib.sha256(Path(r["path"]).read_bytes()).hexdigest() == r["sha256"]:
             state[key] = r
     extractor = hashlib.sha256(Path(__file__).read_bytes().replace(b"\r\n", b"\n") + Path("requirements.txt").read_bytes().replace(b"\r\n", b"\n")).hexdigest()
     fingerprints = {}
